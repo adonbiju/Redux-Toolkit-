@@ -10,8 +10,8 @@ export const todosSlice = createSlice({
         id: uuid(),
         text: action.payload,
       };
-
-
+      
+      
       return [...state, todo];
     }
   },

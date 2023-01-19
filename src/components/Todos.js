@@ -5,6 +5,7 @@ export default function Todos() {
   const todos = useSelector((state) => state.todos);
   // todos comes from the reducer attribute name 
   // in configureStore
+  //"store/index.js"===>reducer name===>todos
 
   return (
     <div>
