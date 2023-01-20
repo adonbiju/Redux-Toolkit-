@@ -10,13 +10,14 @@ export const todosSlice = createSlice({
         id: uuid(),
         text: action.payload,
       };
-      
-      
       return [...state, todo];
+    },
+    deleteTodo: (state, action) => {
+      return state.filter((todo) => todo.id !== action.payload);
     }
   },
 });
 
-export const { addTodo} = todosSlice.actions;
+export const { addTodo,deleteTodo} = todosSlice.actions;
 
 export default todosSlice.reducer;
