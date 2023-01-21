@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Todo from './Todo'
+import '../App.css'
 export default function Todos() {
   const todos = useSelector((state) => state.todos);
   // todos comes from the reducer attribute name 
@@ -8,7 +9,7 @@ export default function Todos() {
   //"store/index.js"===>reducer name===>todos
 
   return (
-    <div>
+    <div className='todos'>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>

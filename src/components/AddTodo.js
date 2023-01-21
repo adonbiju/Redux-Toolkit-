@@ -16,7 +16,7 @@ export default function AddTodo() {
   
     return (
       <form className="AddToDoinputForm" onSubmit={addTodoHandler}>
-        <input
+        <input className='AddToDoinput'
           type='text'
           value={text}
           onChange={(e) => setText(e.target.value)}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { deleteTodo,updateTodo} from '../state'
 import { useDispatch } from 'react-redux';
+import '../App.css'
 
 export default function Todo(props) {
     const { todo } = props;
@@ -23,21 +24,32 @@ export default function Todo(props) {
       setIsEdit(false);
     };
     return isEdit ?(
-      <form onSubmit={saveTodo}>
-      <input
+
+      <div>      
+      <form onSubmit={saveTodo} className='AddToDoinputFormEdit'>
+      <input className='AddToDoinputEdit'
         type='text'
         value={editValue}
         onChange={(e) => setEditValue(e.target.value)}
       />
-      <button type='submit'>Save</button>
-      <button onClick={cancelEdit}>Cancel</button>
+      <button className='save' type='submit'>Save</button>
+      <button className='cancel' onClick={cancelEdit}>Cancel</button>
     </form>
+    </div>
+
     )
     :(
         <>
-         <span>{todo.text}</span>
-         <button onClick={() => setIsEdit(!isEdit)}>Edit</button>
-         <button onClick={() => dispatch(deleteTodo(todo.id))}>Delete</button>
+        <div className='todo'>
+          <div className='left'>
+            <span>{todo.text}</span>
+          </div>
+          
+          <div className='right'>
+              <button className='edit' onClick={() => setIsEdit(!isEdit)}>Edit</button>
+              <button className='delete' onClick={() => dispatch(deleteTodo(todo.id))}>Delete</button>
+          </div>
+         </div>
         </>
       );
 }

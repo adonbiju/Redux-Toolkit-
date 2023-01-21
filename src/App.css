@@ -4,7 +4,7 @@
   }
   
   body {
-    background-color: #020631;
+    background-color: #6c757d;
   }
   
   .App {
@@ -23,6 +23,7 @@
     color: white;
   }
 
+/* in the AddToDo Component */
  .AddToDoinputForm {
     margin-top: 0.8em;
     width: 26em;
@@ -35,7 +36,7 @@
     padding: 5px;
   }
 
-  .AddToDoinputForm  input {
+  .AddToDoinputForm  .AddToDoinput {
     width: 100%;
     height: 1.6em;
     border-color: transparent;
@@ -51,6 +52,123 @@
     border: none;
     padding: 5px;
     width: 9em;
-    background-color: #04AA6D;
+    background-color: #28a745;
+    border-radius: 4px
+  }
+
+/* Todos Component */
+  .todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .todos ul{
+   list-style: none;
+  }
+  /* Todo Component */
+ .todo {
+    margin-top: 0.8em;
+    width: 26em;
+    height: 2em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+  .todo .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .todo .left span {
+    margin-left: 3px;
+    font-size: medium;
+    font-weight: 700;
+    font-style: normal;
+    color: grey;
+  }
+
+  .todo .right .edit{
+    margin-right: 3px;
+    height: 2em;
+    width: 5em;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 5px;
+    background-color: #007bff;
+    border-radius: 4px
+  }
+
+  .todo .right .delete{
+    margin-right: 3px;
+    height: 2em;
+    width: 5em;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 5px;
+    background-color: #dc3545;
+    border-radius: 4px
+  }
+
+  /* todos components cancel and edit */
+  .AddToDoinputFormEdit {
+    margin-top: 0.8em;
+    width: 26em;
+    height: 2em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+  .AddToDoinputFormEdit .AddToDoinputEdit {
+      width: 100%;
+      height: 1.6em;
+      border-color: transparent;
+      outline-color: transparent;
+      margin-left: 3px;
+      font-size: medium;
+      font-weight: 700;
+      font-style: normal;
+      color: grey;
+  }
+
+  .AddToDoinputFormEdit .cancel{
+    margin-right: 3px;
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 5px;
+    background-color: #dc3545;
+    border-radius: 4px
+  }
+  .AddToDoinputFormEdit .save{
+    margin-right: 3px;
+    height: 2em;
+    width: 6em;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 5px;
+    background-color: #007bff;
     border-radius: 4px
   }
