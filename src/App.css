@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #020631;
+  }
+  
+  .App {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+
+  .App .mainHeading h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .App h1{
+    color: white;
+  }
+
+ .AddToDoinputForm {
+    margin-top: 0.8em;
+    width: 26em;
+    height: 2em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+  .AddToDoinputForm  input {
+    width: 100%;
+    height: 1.6em;
+    border-color: transparent;
+    outline-color: transparent;
+  }
+
+  .AddToDoButton {
+    height: 2em;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 900;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 9em;
+    background-color: #04AA6D;
+    border-radius: 4px
+  }

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTodo } from '../state';
+import '../App.css'
 
 export default function AddTodo() {
     const [text, setText] = useState('');
@@ -14,13 +15,13 @@ export default function AddTodo() {
     };
   
     return (
-      <form onSubmit={addTodoHandler}>
+      <form className="AddToDoinputForm" onSubmit={addTodoHandler}>
         <input
           type='text'
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button>Add todo</button>
+        <button className='AddToDoButton'>Add ToDo</button>
       </form>
     );
   }
