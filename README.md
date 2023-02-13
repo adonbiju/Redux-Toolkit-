@@ -1,8 +1,13 @@
-# redux-toolkit
-  * Redux is a global state
-  * Redux is not necessary for every project.
-  * You may need Redux if you don't want to do props drilling (passing props too deep).
-  * If you are still confused about Redux, just think about the React state. The only difference is you can access the state from anywhere.
+# Redux Toolkit
+  <div align="center">
+    <img alt="redux-react" src="Demo/redux-react.jpg"  width="60%" height="30%"/>
+  </div>
+
+- Redux is a global state
+- Redux is not necessary for every project.
+- You may need Redux if you don't want to do props drilling (passing props too deep).
+- If you are still confused about Redux, just think about the React state. The only difference is you can access the state from anywhere.
+
 ```bash
   Just remember that concept "get" and "set". In Redux, we can think that "get" is a selector, and "set" is a dispatch
 ```
@@ -27,7 +32,12 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Start the Project
 
 ```bash
   npm  start
+```
+## Demo Video
+  <h1 align="center">
+  <img alt="Demo Video" src="Demo/todo.gif"  />
+</h1>
